@@ -9,7 +9,11 @@ const NavBar = () => {
     >
       {/* Logo */}
       <a href="#hero" id="logo">
-        <img src="/img/logo.png" alt="Shan Sharma" className="h-8" />
+        <img
+          src="/img/logo.png"
+          alt="Shan Sharma"
+          className="h-15 md:h-20 w-auto object-contain"
+        />
       </a>
 
       {/* Available */}
