@@ -1,4 +1,3 @@
-import cvPdf from "../../assets/documents/Pablo_Carvalho_EN-small.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 import patternImg from "../../assets/images/pattern.png";
@@ -56,8 +55,10 @@ const Hero = () => {
         <div className="w-fit hover:scale-95 transition order-0 md:order-2 self-end md:self-center">
           <a
             className="px-6 py-2 rounded-full font-grotesk md:text-2xl bg-accent-400 text-primary"
-            href={cvPdf}
-            download="Shan_Sharma_Resume.pdf"
+            href="/img/SHAN_RESUME.pdf"
+            download="SHAN_RESUME.pdf"
+            target="_blank"
+            rel="noreferrer"
             id="download-cv"
           >
             <span>resume</span>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import MenuBtn from "../ui/MenuBtn";
-import cvPdf from "../../assets/documents/Pablo_Carvalho_EN-small.pdf";
 
 import { navItems } from "../../data/navItems";
 import { MdArticle, MdOutlineFileDownload } from "react-icons/md";
@@ -75,8 +74,10 @@ const Menu = () => {
             </a>
             )}
             <a
-              href={cvPdf}
-              download="Shan_Sharma_Resume.pdf"
+              href="/img/SHAN_RESUME.pdf"
+              download="SHAN_RESUME.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="flex items-center gap-2 hover:text-secondary-400 transition"
             >
               <span>Resume</span>
