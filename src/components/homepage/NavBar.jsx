@@ -12,7 +12,7 @@ const NavBar = () => {
         <img
           src="/img/logo.png"
           alt="Shan Sharma"
-          className="h-15 md:h-20 w-auto object-contain"
+          className="h-12 md:h-18 w-auto object-contain"
         />
       </a>
 
