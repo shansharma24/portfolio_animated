@@ -4,6 +4,8 @@ import defaultProyectImg from "../../assets/images/default-project-img.png";
 
 const Project = ({
   name = "Project name",
+  subtitle = "",
+  description = "",
   bg = defaultBg,
   img = defaultProyectImg,
   link = "#",
@@ -95,14 +97,24 @@ const Project = ({
         </a>
       )}
       <div className="mt-4">
-        <div className="flex space-x-2 mb-3">
-          <h3 className="flex-grow text-works-title 2xl:text-5xl font-medium uppercase text-primary-400">
+        <div className="flex space-x-2 mb-2 items-baseline justify-between">
+          <h3 className="text-works-title 2xl:text-5xl font-extrabold uppercase text-primary-400">
             {name}
           </h3>
-          <p className="rounded-full font-bold h-fit bg-transparent md:bg-secondary-600 flex justify-center items-center px-4 py-1 text-primary-400 text-body-4 2xl:text-3xl">
+          <p className="rounded-full font-bold h-fit bg-transparent md:bg-secondary-600 flex justify-center items-center px-4 py-1 text-primary-400 text-body-4 2xl:text-3xl shrink-0">
             {year}
           </p>
         </div>
+        {subtitle && (
+          <p className="text-accent-300 font-bold text-base md:text-xl font-grotesk mb-2">
+            {subtitle}
+          </p>
+        )}
+        {description && (
+          <p className="text-secondary-600 font-grotesk text-sm md:text-base leading-relaxed mb-4">
+            {description}
+          </p>
+        )}
         <div className="2xl:space-y-3">
           <div className="flex gap-2 flex-wrap content-start">
             {startIndex > 0 && (

@@ -1,123 +1,75 @@
 import { BG_IMG } from "../constants/backgrounds";
 
-import comingSoonImg from "../assets/images/projects/comingsoon.png";
-//import aipersondetection from "../assets/images/projects/aipersondetection.png";
-//import darioImg from "../assets/images/projects/dariospain.png";
-//import dropperImg from "../assets/images/projects/dropper.png";
-//import triviaChallengeImg from "../assets/images/projects/triviachallenge.png";
-//import twitterCloneImg from "../assets/images/projects/twitterclone.png";
-//import oldPortfolioImg from "../assets/images/projects/oldportfolio.png";
-import wordleinfinitoImg from "../assets/images/projects/wordleinfinito.png"
-import jandjimg from "../assets/images/projects/jandj.png"
-import lunolifeImg from "../assets/images/projects/lunolife.png"
-import nsGcorpImg from "../assets/images/projects/nsgcorp.png"
+import floydSchoolImg from "../assets/images/projects/floydschool.jpg";
+import smartKrishiImg from "../assets/images/projects/smartkrishi.jpg";
+import agriVisionImg from "../assets/images/projects/agrivision.jpg";
 
 export const projects = [
   {
-    name: "Jack & Jones",
-    bg: BG_IMG.bg_2,
-    img: jandjimg,
-    link: "https://jackjones.com.uy/",
-    year: 2025,
-    tools: ["Shopify", "Liquid", "Tailwind"],
-    inactive: false,
-  },
-  {
-    name: "Luno",
-    bg: BG_IMG.bg_3,
-    img: lunolifeImg,
-    link: "https://lunolife.com/",
-    year: 2025,
-    tools: ["Shopify", "Liquid", "Tailwind"],
-    inactive: false,
-  },
-  {
-    name: "NSGCorp",
-    bg: BG_IMG.bg_3,
-    img: nsGcorpImg,
-    link: "https://www.nsgcorp.me/",
-    year: 2024,
-    tools: [ "Headless CMS", "Next", "Figma", "Tailwind", "GSAP", "UX/UI"],
-    inactive: false,
-  },
-  {
-    name: "Wordle Infinito",
-    bg: BG_IMG.bg_3,
-    img: wordleinfinitoImg,
-    link: "https://wordleinfinito.com/",
-    year: 2025,
-    tools: ["Next", "Typescript", "MongoDB", "Node", "WebSocket", "Express", "Tailwind", "Shadcn"],
-    inactive: false,
-  },
-  {
-    name: "El Impostor",
-    bg: BG_IMG.bg_3,
-    img: "https://impostor.gratis/og.png",
-    link: "https://impostor.gratis/",
+    name: "Floyd School LMS",
+    subtitle: "Full Stack MERN Ed-Tech Platform",
+    description:
+      "Architected a scalable multi-portal learning ecosystem (Student, Mentor, Admin) with JWT-based role access control, Razorpay payments, Socket.IO real-time classroom communication, centralized admin management, and an integrated AI study assistant.",
+    bg: BG_IMG.bg_1,
+    img: floydSchoolImg,
+    link: "https://www.floydschool.in",
     year: 2026,
-    tools: ["Next", "Typescript", "Tailwind", "AI", "Party Game"],
+    tools: [
+      "MERN",
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.IO",
+      "Razorpay",
+      "JWT",
+      "AI",
+      "REST APIs",
+    ],
     inactive: false,
     macOverlay: true,
   },
   {
-    name: "Resumidas Cuentas",
-    bg: BG_IMG.bg_1,
-    img: comingSoonImg,
-    link: "#",
+    name: "Smart Krishi",
+    subtitle: "AI + IoT Agriculture Platform (Pre-incubated at IIT Delhi)",
+    description:
+      "Connected real-time sensor field telemetry with ML-driven insights (crop recommendations, fertilizer guidance, automated irrigation triggers) into an intuitive, high-performance dashboard interface for modern farmers.",
+    bg: BG_IMG.bg_2,
+    img: smartKrishiImg,
+    link: "https://drive.google.com/drive/folders/1FBXlIYlyKzErJLGw7y2PMXkswN663k4B?usp=sharing",
     year: 2026,
-    tools: ["AI", "Next", "Typescript", "MongoDB", "Node", "Express", "Tailwind", "Shadcn"],
-    inactive: true,
+    tools: [
+      "AI / ML",
+      "IoT",
+      "React",
+      "Node.js",
+      "Python",
+      "Sensors",
+      "Telemetry",
+      "Dashboard",
+    ],
+    inactive: false,
+    macOverlay: true,
   },
-
-  /*   {
-      name: "Multimedia Social Media",
-      bg: BG_IMG.bg_1,
-      img: msmImg,
-      link: "https://multimediasocialmedia.vercel.app/",
-      year: 2024,
-      tools: ["Backend", "MongoDB", "Node", "React", "Redux", "React Query", "Tailwind"],
-      inactive: false,
-    }, */
-  /*  {
-     name: "Darío Spain",
-     bg: BG_IMG.bg_3,
-     img: darioImg,
-     link: "https://dariospain.netlify.app/",
-     year: 2023,
-     tools: ["React", "Tailwind", "Figma", "Team Work", "Real Client"],
-   },
-   {
-     name: "Dropper",
-     bg: BG_IMG.bg_5,
-     img: dropperImg,
-     link: "https://droppershop.netlify.app/",
-     year: 2023,
-     tools: ["Firebase", "Stock", "Shopping Cart", "React", "CSS"],
-   },
-   {
-     name: "Trivia Challenge",
-     bg: BG_IMG.bg_6,
-     img: triviaChallengeImg,
-     link: "https://triviachallenge.vercel.app/",
-     year: 2023,
-     tools: ["APIs", "Game", "React", "Tailwind", "Zustand"],
-   },
- 
-      {
-     name: "Portfolio 2023",
-     bg: BG_IMG.bg_5,
-     img: oldPortfolioImg,
-     link: "https://github.com/shansharma24",
-     year: 2023,
-     tools: ["Javascript", "HTML", "CSS", "GSAP"],
-   }, */
-  /*     {
-     name: "AI Person Detection",
-     bg: BG_IMG.bg_2,
-     img: aipersondetection,
-     link: "https://person-detection-ia.vercel.app/",
-     year: 2024,
-     tools: ["not working on iOS","AI", "Next.js", "Typescript", "Tailwind"],
-     inactive: true,
-   },  */
+  {
+    name: "AgriVision",
+    subtitle: "AI & Computer Vision Crop Diagnosis Platform",
+    description:
+      "Engineered a computer vision platform analyzing drone and field camera feeds with deep learning models to perform automated plant disease detection, leaf health scoring, and precision crop analytics.",
+    bg: BG_IMG.bg_3,
+    img: agriVisionImg,
+    link: "https://github.com/shansharma24/AgriVision",
+    year: 2026,
+    tools: [
+      "Computer Vision",
+      "AI",
+      "Deep Learning",
+      "React",
+      "JavaScript",
+      "Python",
+      "Analytics",
+    ],
+    inactive: false,
+    macOverlay: true,
+  },
 ];
